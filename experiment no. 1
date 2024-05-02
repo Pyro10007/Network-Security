@@ -58,3 +58,32 @@ int main() {
     return 0;
 }
 
+// Student Name: _Pranith Puthanpurakkal .B
+// Experiment No: _1(c)
+
+#include <stdio.h>
+#include <string.h>
+
+int main() {
+    const char* expectedUsername = "Admin";
+    const char* expectedPassword = "1234";
+    char enteredUsername[6], enteredPassword[10];
+
+    printf("Enter Username (max 5 characters): ");
+    scanf("%5s", enteredUsername);
+
+    printf("Enter Password (max 9 characters): ");
+    scanf("%9s", enteredPassword);
+
+    if (strcmp(expectedUsername, enteredUsername) == 0 && strcmp(expectedPassword, enteredPassword) == 0) {
+        printf("Welcome! Login Success\n");
+    } else if (strcmp(expectedUsername, enteredUsername) == 0) {
+        printf("Wrong Password\n");
+    } else {
+        printf("User doesn't exist\n");
+    }
+
+    return 0;
+}
+
+
