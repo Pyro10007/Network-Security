@@ -1,3 +1,6 @@
+ // Student Name: __Pranith Puthanpurakkal.B
+ // Experiment No: 1(a)
+
 #include <stdio.h> // For hiding password input
 
 #define MAX_PASSWORD_LENGTH 50
@@ -25,3 +28,33 @@ int main() {
     // Step (v): End
     return 0;
 }
+
+
+ // Student Name: __Pranith Puthanpurakkal.B
+ // Experiment No: 1(b)
+
+#include <stdio.h>
+
+int main() {
+   
+
+    int x = 1234;
+    int pass;
+
+    if (x == 0) {
+        return 0;
+    } else if (x != 0) {
+        printf("\nInput the password: ");
+        scanf("%d", &pass);
+        if (pass == x) {
+            printf("Correct password");
+            x = 0;
+        } else {
+            printf("Wrong password, please try again");
+        }
+        printf("\n");
+    }
+
+    return 0;
+}
+
