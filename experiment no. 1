@@ -1,0 +1,27 @@
+#include <stdio.h> // For hiding password input
+
+#define MAX_PASSWORD_LENGTH 50
+
+int main() {
+    char defaultPassword[MAX_PASSWORD_LENGTH];
+    char enteredPassword[MAX_PASSWORD_LENGTH];
+    int i;
+
+    // Step (i): Declare array
+    // Step (ii): Accept password from user
+    printf("Enter default password: ");
+    scanf("%s", defaultPassword);
+
+    // Step (iii): Hide the password and display as "***....."
+    printf("Password entered: ");
+    for (i = 0; defaultPassword[i] != '\0'; i++) {
+        printf("*");
+    }
+    printf("\n");
+
+    // Step (iv): Display the actual password
+    printf("Actual Password: %s\n", defaultPassword);
+
+    // Step (v): End
+    return 0;
+}
